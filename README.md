@@ -1,12 +1,12 @@
 ### Angular 2 production workflow with SystemJs builder and gulp
 
-Angular.io have quick start tutorial on https://angular.io/docs/ts/latest/quickstart.html. I copied this tutorial and extended with some gulp tasks for bundling everythink to dist folder which can be copied to server and work just like that.
+Angular.io have quick start tutorial on https://angular.io/docs/ts/latest/quickstart.html. I copied this tutorial and extended with some gulp tasks for bundling everything to dist folder which can be copied to server and work just like that.
 
 #### Steps to success
 1. Clean typescripts compiled js files and dist folder
 2. Compile typescript files
-3. Bundle everythink to dist folder with generated hash for browser cache resync
-4. Copy everythink inside assets folder to dist folder
+3. Bundle everything to dist folder with generated hash for browser cache resync
+4. Copy everything inside assets folder to dist folder
 
 First let look at angular 2 quickstart index.html
 
