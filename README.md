@@ -8,7 +8,7 @@ Angular.io have quick start tutorial on https://angular.io/docs/ts/latest/quicks
 3. Bundle everythink to dist folder
 4. Copy everythink inside assets folder to dist folder
 
-Ok so firstly let look at angular 2 quickstart index.html
+First let look at angular 2 quickstart index.html
 
 ```html
  <!-- 1. Load libraries -->
@@ -23,7 +23,7 @@ Ok so firstly let look at angular 2 quickstart index.html
       System.import('app').catch(function(err){ console.error(err); });
     </script>
 ```
-You can notice needed polyfills is loaded from node_modules path, lets fix it so it can be bundled. In app folder I created vendor.ts for such libraries which is not part of angular but still need to be loaded for one or another reason.
+You can notice needed polyfills is loaded from node_modules path lets fix it so it can be bundled. In app folder I created vendor.ts for such libraries which is not part of angular but still need to be loaded for one or another reason.
 
 *app/vendor.ts*
 ```ts
