@@ -3,10 +3,10 @@
 Angular.io have quick start tutorial on https://angular.io/docs/ts/latest/quickstart.html. I copied this tutorial and extended with some gulp tasks for bundling everythink to dist folder which can be copied to server and work just like that.
 
 #### Steps to success
-1. Clean typescripts compiled js files
+1. Clean typescripts compiled js files and dist folder
 2. Compile typescript files
 3. Bundle everythink to dist folder
-4. Copy stuff everythink inside assets folder to dist folder
+4. Copy everythink inside assets folder to dist folder
 
 Ok so firstly let look at angular 2 quickstart index.html
 
