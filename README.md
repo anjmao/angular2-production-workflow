@@ -1,2 +1,3 @@
-# angular2-production-workflow
-Angular 2 production workflow with gulp and systemjs builder
+### Angular 2 Documentation Example 
+
+QuickStart
