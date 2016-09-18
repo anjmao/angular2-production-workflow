@@ -88,4 +88,5 @@ We can do bundling step using SystemJs builder which take care of all bundling s
 ### Questions you may ask
 1. Why you use gulp shell to compile typescript files instead of using gulp-typescript? Because by running tsc command I'm always sure typescript compiler use tsconfig.json settings. gulp-typescript ignore some of them. Example is sourcemaps, even if you set sourceMaps: true in tsconfig.json file, gulp-typescript will ingore this setting.
 
+2. Does angular html templates is also bundled? Yes. We can use power of SystemJs plugin like to load html into javascript so it can be bundled.
 
