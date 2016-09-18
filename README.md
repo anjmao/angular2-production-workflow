@@ -5,7 +5,7 @@ Angular.io have quick start tutorial on https://angular.io/docs/ts/latest/quicks
 #### Steps to success
 1. Clean typescripts compiled js files and dist folder
 2. Compile typescript files
-3. Bundle everythink to dist folder
+3. Bundle everythink to dist folder with generated hash for browser cache resync
 4. Copy everythink inside assets folder to dist folder
 
 First let look at angular 2 quickstart index.html
@@ -63,7 +63,7 @@ Next step is to move scripts loading to body bottom
   </body>
   ```
   
-  Ok so, by now we still don't have any bundle step but and system.js is still loaded from node_modules path. Don't worry because it time to create self executing SystemJs so it can be run without any external dependency. Our mission is to run gulp task wich can replace index.html file with bundled files for production use only and copy all this to dist folder. So we should have somethink like this:
+  Ok so, by now we still don't have any bundle step and system.js is still loaded from node_modules path. Don't worry because it's time to create self executing SystemJs bundles so it can be run without any external dependencies. Our mission is to run gulp task wich can replace index.html file with bundled files for production use and copy all this to dist folder. We should have somethink like this:
   
   *dist/index.html*
   ```html
@@ -83,6 +83,9 @@ Next step is to move scripts loading to body bottom
 </html>
   ```
 
-I did it using SystemJs builder which take care of all bundling step and gulp-html-replace for replacing script tags with bundled version. Now run ```gulp dist``` and everythink needed to run app should be compiled to dist folder.
+We can do bundling step using SystemJs builder which take care of all bundling step and gulp-html-replace for replacing script tags with bundled version. Now run ```gulp dist``` and everythink needed to run app should be compiled to dist folder.
+
+### Questions you may ask
+1. Why you use gulp shell to compile typescript files instead of using gulp-typescript? Because by running tsc command I'm always sure typescript compiler use tsconfig.json settings. gulp-typescript ignore some of them. Example is sourcemaps, even if you set sourceMaps: true in tsconfig.json file, gulp-typescript will ingore this setting.
 
 
