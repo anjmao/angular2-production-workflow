@@ -10,6 +10,7 @@ var bundleHash = new Date().getTime();
 var mainBundleName = bundleHash + '.main.bundle.js';
 var vendorBundleName = bundleHash + '.vendor.bundle.js';
 
+// This is main task for production use
 gulp.task('dist', function(done) {
     runSequence('clean', 'compile_ts', 'bundle', 'copy_assets', function() {
         done();
