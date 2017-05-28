@@ -1,5 +1,7 @@
 ### Angular 2 production workflow with SystemJs builder and gulp
 
+<b>NOTE:</b> As angular cli is official launched I highly recommend to use angular cli for production workflows.
+
 Angular.io have quick start tutorial on https://angular.io/docs/ts/latest/quickstart.html. I copied this tutorial and extended with some gulp tasks for bundling everything to dist folder which can be copied to server and work just like that.
 
 #### Steps to success
